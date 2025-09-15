@@ -1,0 +1,89 @@
+/* mobile devices (md: ≥768px) */
+@media only screen and (min-width: 200px) and (max-width: 992px) {
+  .team-card-title {
+    font-size: 8px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    margin: 0 4px;
+    /* text-wrap is not standard, use white-space */
+  }
+
+  .team-card-para {
+    font-size: 7px;
+    font-weight: 300;
+    color: #00000079;
+    white-space: nowrap;
+    margin: 0 4px;
+    /* text-wrap is not standard, use white-space */
+  }
+
+  /* our team section for End   */
+
+  /* Start Kunden Testimonials Section */
+
+  .Testimonials-heading {
+    display: inline-block;
+    text-wrap: nowrap;
+    word-spacing: -5px;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .whyWork-container {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px 5px !important;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+
+  .whyWork-textarea {
+    padding: 10px 0.6rem;
+  }
+
+  .whyWork-ImageArea {
+    padding: 10px 0.6rem;
+  }
+
+  /* footer section start */
+
+  /* footer second section start */
+  .ft-heading-ankermarket {
+    font-size: 36px;
+    text-wrap: nowrap;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 800;
+    word-spacing: -4px;
+    letter-spacing: -1px;
+  }
+
+  .footer-manu-list .ft-manu-list {
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+    text-transform: uppercase;
+  }
+
+  .footer-manu-list .ft-manu-list li {
+    font-weight: 600;
+  }
+
+  /* footer second section end */
+}
+
+@media (max-width: 768px) {
+  .team-card {
+    min-width: 50%;
+    /* 2 cards visible */
+  }
+}
+
+@media (max-width: 576px) {
+  .team-card {
+    min-width: 100%;
+    /* 1 card visible */
+  }
+}

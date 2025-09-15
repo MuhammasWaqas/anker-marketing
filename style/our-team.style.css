@@ -1,0 +1,106 @@
+.input-bg-color {
+  background-color: #3f3f3f7e;
+  color: white;
+}
+
+/* our team section for start  */
+
+.OurTeam-section-heading {
+  font-size: 46px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: -0.2px;
+  font-family: "Switzer", "Switzer Placeholder", sans-serif;
+  animation: bounce 3s ease infinite; /* Heading Animation */
+}
+
+.OurTeam-section-paragraph {
+  font-size: 16px;
+  font-weight: 500 !important;
+  letter-spacing: -0.2px;
+  color: #000000;
+  font-family: sans-serif !important;
+  text-transform: capitalize;
+  cursor: pointer;
+  line-height: 0.5;
+  /* animation-timeline: ourteam-scroll;
+  animation-fill-mode: both; */
+}
+
+.OurTeam-section-paragraph:hover{  
+  animation: floatUpFade 1s ease-in-out;
+}
+
+/* Parent container should hide overflow */
+.team-card-container {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Animation for the horizontal scrolling */
+@keyframes scroll-cards {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  display: flex;
+  animation: scroll-cards 10s linear infinite;
+  width: 100%;
+  /* double the width to allow smooth loop */
+}
+
+/* Optional: Set fixed card width for better consistency */
+.team-card {
+  /* min-width: 25%; */
+  /* 4 cards per row - 100% / 4 */
+  box-sizing: border-box;
+  padding: 0 5px;
+}
+
+.team-card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+  text-transform: uppercase;
+  text-wrap: nowrap;
+}
+
+.team-card-para {
+  font-size: 16px;
+  font-weight: 400;
+  color: #00000079;
+  text-wrap: nowrap;
+}
+/* our team section for End   */
+
+/* Our Team heading animation */
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translateY(-15px);
+    opacity: 1;
+  }
+}
+/* Our Team Paragraph Text Animation */
+@keyframes floatUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

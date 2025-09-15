@@ -1,0 +1,89 @@
+
+.footer-container {
+     width: 100%;
+     padding: 2.5rem 10px;
+     overflow-x: hidden;
+     box-sizing: border-box;
+     background-color: #000000;
+}
+
+/* footer form input select  */
+.footer-form .form-control {
+     background-color: #3f3f3f7e;
+     color: white;
+}
+
+/* footer form input select end   */
+.footer-form .footer-Btn-submit {
+     background-color: #ffffff;
+     opacity: 1;
+     border: none;
+     /* padding: 10px 0; */
+     align-items: center;
+     height: 40px;
+     font-size: 12px;
+     font-family: sans-serif;
+     text-transform: uppercase;
+     transition: 0.3s;
+
+     &:hover {
+          background-color: #3f3f3f7e;
+          color: #ffffff;
+     }
+}
+
+
+.footer-reachout-h1 {
+     font-size: 3.1rem;
+     text-transform: uppercase;
+     font-weight: 700;
+}
+
+.footer-reachout-card {
+     background-color: rgba(0, 0, 0, 0.555);
+     color: white;
+}
+
+.footer-reachout-card .ft-reach-card {
+     border-bottom: 1px solid white;
+
+}
+
+.footer-reachout-card .ft-reach-card p {
+     font-size: 13px;
+}
+
+
+.footer-reachout-card .ft-reach-card:last-child {
+     border-bottom: none;
+
+}
+
+.ft-heading-ankermarket {
+     font-size: 118px;
+     color: #FFF;
+     text-transform: uppercase;
+     font-weight: 800;
+     word-spacing: -24px;
+     letter-spacing: -1px;
+}
+
+.footer-manu-list .ft-manu-list {
+     list-style: none;
+     text-align: left;
+     padding-left: 0;
+     text-transform: uppercase;
+}
+
+.footer-manu-list .ft-manu-list li {
+     font-weight: 550;
+}
+
+/* footer second section end */
+
+
+@media only screen and (max-width: 840px) {
+ .ft-heading-ankermarket {
+  font-size: 50px;
+} 
+}

@@ -1,0 +1,64 @@
+/* Start WHY WORK WITH US? Section  */
+
+
+
+.whyWork-container {
+  height: auto;
+  border: 1px solid #0000001a;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  cursor: pointer;
+}
+
+.whyWork-container:hover{
+      animation: floatUpFade 1s ease-in-out;
+
+}
+
+
+.WyWork-heading {
+  font-size: 46px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: -1.4px;
+  text-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.whyWork-ImageArea .whyWork-card-img {
+  height: 280px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.WhyWork-textarea {
+  text-align: center;
+  padding: 30px;
+}
+
+.WhyWork-card-heading {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.WhyWork-card-para {
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  font-family: "Switzer", "Switzer Placeholder", sans-serif;
+}
+
+/* .End WHY WORK WITH US? Section  */
+@keyframes floatUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

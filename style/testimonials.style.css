@@ -1,0 +1,132 @@
+/* How We Work 3 card section start  */
+
+.HowWe-Work-heaing {
+     font-size: 46px;
+     letter-spacing: -.4px;
+     color: #000000;
+     text-transform: uppercase;
+     word-spacing: -1.4px;
+     font-weight: 700;
+     text-shadow: 0 0 10px rgba(0,0,0,0.3);
+     /* animation: glow 2s ease-in-out infinite alternate; */
+}
+
+/* card start HowWork-card class */
+.HowWork-card {
+     height: auto;
+     width: 420px;
+     opacity: 1;
+     background-color: #fff;
+     padding: 15px;
+     border: 1px solid #00000033;
+     cursor: pointer;
+}
+
+.HowWork-card:hover{
+   animation: floatUpFade 1s ease-in-out;
+}
+
+
+.HowWork-card .HowWork-card-title {
+     font-family: sans-serif !important;
+     font-size: 20px;
+     font-weight: 600;
+     letter-spacing: 0em;
+     color: #000000;
+     text-transform: uppercase;
+}
+
+.HowWork-card .HowWork-card-descr {
+     font-family: sans-serif !important;
+     font-size: 14px;
+     letter-spacing: -0.2px;
+     line-height: 130%;
+     font-weight: 500 !important;
+     text-transform: inherit;
+}
+
+/* How We Work 3 card section end  */
+
+/* Start Kunden Testimonials Section */
+
+.Testimonials-heading {
+     font-family: "Switzer",
+          "Switzer Placeholder",
+          sans-serif;
+
+     opacity: 1;
+     font-family: "Switzer",
+          "Switzer Placeholder",
+          sans-serif;
+     color: #000000;
+     text-transform: uppercase;
+     word-spacing: -5px;
+     font-size: 58px;
+     font-weight: 700;
+     letter-spacing: -2px;
+     animation: bounce 2.5s ease infinite;
+}
+
+.headingfontweight {
+     font-weight: 700;
+     font-size: 14px;
+     text-transform: uppercase;
+}
+
+.parafontweight {
+     font-weight: 600;
+     font-size: 11px;
+     text-transform: uppercase;
+}
+
+.Testimonials-descr-columu {
+     font-weight: 600;
+     color: #000000;
+     font-size: 20px;
+     line-height: 100%;
+     text-transform: uppercase;
+}
+.Testimonials-descr-columu:hover{
+     animation: floatUpFade 1s ease-in-out;
+}
+
+.Testimonials-image {
+     width: 40px;
+}
+
+/* End for Kunden Testimonials Section */
+
+/* How we work animation */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px black;
+  }
+  to {
+    text-shadow: 0 0 20px black, 0 0 30px black;
+  }
+}
+
+/* Bouncing Animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+    opacity:0.5;
+  }
+  50% {
+    transform: translateY(-15px);
+      opacity: 1;
+  }
+}
+
+/* Text animation */
+
+@keyframes floatUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

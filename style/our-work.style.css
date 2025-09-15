@@ -1,0 +1,78 @@
+
+.work-head {
+   font-size: 46px;
+   font-style: normal;
+   font-weight: 700;
+   color: #000000;
+   text-decoration: none;
+   text-transform: uppercase;
+
+  transition: 2s ease-in-out;
+}
+
+.work-head:hover{
+   animation: bounce 2.5s ease infinite;
+   cursor: pointer;
+}
+
+.work-subhead{
+    /* font-size: 24px; */
+    text-align: center;
+}
+
+.anker-video {
+  /* position: absolute; */
+  width: 100%;
+  height: 100%;
+  padding: 0px 36px;
+}
+
+.anker-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* or 'cover' depending on your needs */
+}
+
+
+.video-container {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Keeps aspect ratio */
+  overflow: hidden;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Stretch to fit without cropping */
+}
+
+.slider-video {
+  width: 100%;
+  height: 100vh;
+  margin: 3px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Fill container, crop if needed */
+  object-position: center;
+  display: block;
+  pointer-events: none; /* Prevent click to pause */
+  background-color: black;
+  border-radius: 0;
+}
+
+/* Animation  */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+    opacity:0.5;
+  }
+  50% {
+    transform: translateY(-15px);
+      opacity: 1;
+  }
+}
